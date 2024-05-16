@@ -4,18 +4,13 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-   <bean id="employee" class="org.wipro.Employeeapplication.Employee">
-       <property name="id" value="123" />
-       <property name="name" value="sharathkumar" />
-       <property name="designation" value="software engineering"/>
-       <property name="salary" value="100000.00"/>
+   <bean id="employee1" class="org.wipro.Employeeapplication.Employee">
+       <constructor-arg value="123"/>
+       <constructor-arg value="sharath"/>
+       <constructor-arg value="software engineering"/>
+       <constructor-arg value="100000.00"/>
 
    </bean>
-    <bean id="employee1" class="org.wipro.Employeeapplication.Employee">
-        <property name="id" value="123" />
-        <property name="name" value="sharathkumar" />
-        <property name="designation" value="software engineering"/>
-        <property name="salary" value="100000.00"/>
-    </bean>
+
 
 </beans>
